@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Michał Jurek - Email Signature</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
+
+	<style>
+		:root {
+			--main-color: rgb(0, 0, 0);
+			--hover-color: rgb(43, 80, 66);
+			--backgroundcolor: rgb(251, 251, 251);
+			--transition-set: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+
+		body {
+			font-family: "Marcellus", serif;
+			font-weight: 400;
+			font-style: normal;
+			font-optical-sizing: auto;
+			font-variation-settings: "wdth" 100;
+			font-size: 15px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			max-width: 55%;
+			max-height: 20%;
+			background-color: var(--backgroundcolor);
+			background-image: url(https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/hortensja%20final.png);
+			background-repeat: no-repeat;
+			background-size: 35%;
+			background-position: right;
+		}
+
+		.section1 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 17px;
+		}
+
+		.logo_section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: auto;
+			transition: var(--transition-set);
+		}
+
+		.logo_section:hover {
+			color: var(--hover-color);
+			font-weight: bold;
+		}
+
+		.section2 {
+			display: flex;
+			align-items: center;
+			margin: 17px;
+			padding: 0;
+		}
+
+		.link {
+			color: var(--main-color);
+			font-size: 13px;
+			text-decoration: none;
+		}
+
+		.social_line {
+			display: flex;
+			gap: 10px;
+			margin-top: auto;
+		}
+
+		.separator {
+			display: flex;
+			margin-top: 1%;
+			margin-bottom: 1%;
+			background-color: black;
+			width: 3px;
+		}
+
+		.personal {
+			list-style: none;
+			line-height: 1.4;
+		}
+
+		.personal p {
+			margin: 0;
+		}
+
+		.name {
+			font-size: 38px;
+			transition: var(--transition-set);
+		}
+
+		.name:hover {
+			text-shadow: 1px 1px 1px grey;
+		}
+
+		.role {
+			font-size: 21px;
+			text-transform: uppercase;
+		}
+
+		.email_adress,
+		.tel_num {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			color: var(--main-color);
+			letter-spacing: 0.6px;
+			text-decoration: none;
+			transition: var(--transition-set);
+		}
+
+		.tel_num:hover,
+		.email_adress:hover {
+			color: var(--hover-color);
+			font-weight: bold;
+			transform: translateX(-5px);
+		}
+
+		.icon_telephone,
+		.icon_envelope {
+			padding-right: 5px;
+		}
+
+		.social_icon {
+			transition: var(--transition-set);
+		}
+
+		.social_icon:hover {
+			transform: translateY(-5px);
+		}
+
+		.eko_label {
+			display: flex;
+			margin-left: 17px;
+			max-width: 55%;
+			gap: 5px;
+			font-size: 11px;
+		}
+
+		.recycling_icon {
+			transition: var(--transition-set);
+		}
+
+		.recycling_icon:hover {
+			transform: rotate(360deg);
+		}
+
+		.privacy_policy {
+			display: flex;
+			flex-direction: row;
+			margin-left: 17px;
+			max-width: 55%;
+		}
+
+		.privacy_img {
+			display: flex;
+			align-items: center;
+			transition: var(--transition-set);
+		}
+
+		.privacy_img:hover {
+			transform: rotate(90deg);
+		}
+
+		.privacy_policy_info {
+			color: var(--main-color);
+			font-size: 11px;
+			text-align: justify;
+			padding-left: 10px;
+		}
+
+		.privacy_policy_info h4,
+		h5,
+		span,
+		a {
+			margin: 0;
+			color: var(--main-color);
+			transition: var(--transition-set);
+			text-decoration: none;
+		}
+
+		.privacy_policy_info h4:hover,
+		.privacy_policy_info h5:hover {
+			transform: translateX(5px);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="section1">
+			<div class="logo_section">
+				<a href="https://cesarskieogrody.pl" target="_blank">
+					<div class="logo">
+						<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/LogoHotel.png"
+							alt="Logo" style="height: 66px" />
+					</div>
+				</a>
+				<a class="link" href="https://cesarskieogrody.pl"
+					target="_blank"><span>www.cesarskieogrody.pl</span></a>
+			</div>
+			<div class="social_line">
+				<a class="social_icon" href="https://www.facebook.com/hotelcesarskieogrody" target="_blank">
+					<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/fb.png"
+						alt="Facebook Icon" style="height: 15px" />
+				</a>
+				<a class="social_icon" href="https://www.instagram.com/hotelcesarskieogrody" target="_blank">
+					<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/insta.png"
+						alt="Instagram Icon" style="height: 15px" />
+				</a>
+				<a class="social_icon" href="https://pl.linkedin.com/company/hotel-cesarskie-ogrody" target="_blank">
+					<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/in.png"
+						alt="LinkedIn Icon" style="height: 15px" />
+				</a>
+			</div>
+		</div>
+
+		<div class="separator"></div>
+		<div class="section2">
+			<div class="personal">
+				<p class="name">Michał Jurek</p>
+				<p class="role">Guest Service Representative & Auditor</p>
+				<a class="email_adress" href="mailto:michal.jurek@cesarskieogrody.pl">
+					<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/envelope.png"
+						alt="Email Icon" style="height: 15px" class="icon_envelope" />
+					<span>michal.jurek@cesarskieogrody.pl</span>
+				</a>
+				<a class="tel_num" href="tel:48918888500">
+					<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/telephone.png"
+						alt="Telephone Icon" style="height: 15px" class="icon_telephone" />
+					<span>+48 91 88 88 500</span>
+				</a>
+				<p class="HotelName">Hotel Cesarski SPA Sp. z o.o.</p>
+				<p class="adress">
+					<a target="_blank" referrerpolicy="no-referrer-when-downgrade"
+						href="https://maps.app.goo.gl/rtfVtXhZpnCMX5W5A"
+						style="text-decoration: none; color: inherit">72-600 Świnoujście | ul. Wyspiańskiego 34a</a>
+				</p>
+				<p class="adress">NIP: 123 456 22 REGON: 987 987 987 85</p>
+			</div>
+		</div>
+	</div>
+	<p class="eko_label">
+		<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/recycling.png"
+			alt="Recycling Icon" style="height: 15px" class="recycling_icon" />
+		<span>Czy musisz drukować tę wiadomość? Pomyśl o środowisku. Please do not print this e-mail. It
+			will save trees!</span>
+	</p>
+	<div class="privacy_policy">
+		<div class="privacy_img">
+			<a class="privacy_policy_img" href="https://www.cesarskieogrody.pl/privacy" target="_blank">
+				<img src="https://raw.githubusercontent.com/MichalJurek/Email_signature_CeOg24/refs/heads/main/loupe.png"
+					alt="Loupe Icon" style="height: 55px" class="icon_loupe" />
+			</a>
+		</div>
+		<div class="privacy_policy_info">
+			<a href="https://www.cesarskieogrody.pl/privacy" target="_blank">
+				<h4>Jak wszyscy przetwarzamy dane osobowe</h4>
+				<h5>Kliknij i sprawdź naszą politykę prywatności</h5>
+				<span>Informacje, które zawiera niniejsza korespondencja są poufne i skierowane tylko i
+					wyłącznie do adresata. Jeśli e-mail odebrany został przypadkowo lub w wyniku zaistniałej
+					pomyłki przez osobę iną niż adresat, uprzejmie prosimy odbiorcę o natychmiastowe
+					powiadomienie nadawcy i skasowanie wiadomości e-mail. Jeżeli odbiorca nie jest adrestatem
+					wiadomości, niniejszym informujemy, iż zapoznanie się z treścią, którą ona zawiera, jej
+					kopiowanie i rozpowszechnianie jest nieuprawnione.</span>
+			</a>
+		</div>
+	</div>
+</body>
+
+</html>
